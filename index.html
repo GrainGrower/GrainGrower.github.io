@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+		<div class="head">
+			<div class="deck">
+				<img class="deck_img" src="cards/deck.png">
+			</div>
+			<div class="dealer_hand">
+			</div>
+			<div class="messager_container">
+				<textarea class="messager">Робить ставки, джентельмени ^.^</textarea>
+			</div>
+		</div>
+        <div class="bet_field">
+			<p class="cash">Ви маєте: <span class="current_cash"></span></p>
+			<p class="minimal_bet">Мінімальна ставка: <span class="current_bet_value">2¢</span></p>
+			<p class="current_bet_counter">Поточна ставка: <span class="current_bet">2¢</span> </p>
+			<div class="bet_string_container">
+				<div class="bet_input_container">
+					<input class="bet_input" type="number" value="2">
+					<p class="cent">¢</p>
+				</div>
+				<a href="#" class="bet_button">Затвердити ставку</a>
+			</div>
+		</div>
+		<div class="action_field hide">
+			<a href="#" class="bet_button"><b>Ще ("A")</b></a>
+			<a href="#" class="bet_button"><b>Досить ("Space")</b></a>
+			<a href="#" class="bet_button"><b>Дабл ("D")</b></a>
+			<a href="#" class="bet_button"><b>Спліт ("S")</b></a>
+		</div>
+		<div class="blackjack_secure hide">
+			<p>Застрахуватися від автоблекджеку ділера? (вартість страхування: <span></span>)</p>
+			<div>
+				<a href="#" class="bet_button"><b>Так</b></a>
+				<a href="#" class="bet_button"><b>Ні</b></a>
+			</div>
+		</div>
+		<div class="player_hand"></div>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
